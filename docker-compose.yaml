@@ -10,7 +10,7 @@ services:
       - ./src:/var/www
     depends_on:
       - php
-      
+      - pgsql
       - redis
   php:
     build:
